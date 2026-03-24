@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yhaw Surface Dream League Soccer Tournament | Join Now</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+    <nav class="p-6 flex justify-between items-center bg-gray-800 border-b border-green-500">
+        <h1 class="text-2xl font-bold tracking-tighter text-green-400">DLS <span class="text-white">TOURNAMENT</span></h1>
+        <a href="#join" class="bg-green-600 hover:bg-green-700 px-6 py-2 rounded-full font-bold transition">Join Now</a>
+    </nav>
+
+    <header class="py-20 px-6 text-center bg-gradient-to-b from-gray-800 to-gray-900">
+        <h2 class="text-5xl md:text-7xl font-extrabold mb-4">Are You The Best <span class="text-green-500 font-italic">DLS</span> YHAW RHICH</h2>
+        <p class="text-gray-400 text-xl max-w-2xl mx-auto mb-8">Register for the 2026 Dream League Soccer Championship. High stakes, real rewards, and ultimate glory.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <div class="bg-gray-800 p-4 rounded-lg border border-gray-700 w-40">
+                <p class="text-sm text-gray-500">Deposit Fee</p>
+                <p class="text-2xl font-bold">15 cedis</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg border border-gray-700 w-40">
+                <p class="text-sm text-gray-500">Prize Pool</p>
+                <p class="text-2xl font-bold text-green-400">GH100 cedis</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="join" class="py-16 px-6 max-w-4xl mx-auto">
+        <div class="bg-white text-gray-900 rounded-2xl p-8 shadow-2xl">
+            <h3 class="text-3xl font-bold mb-6 text-center">Tournament Registration</h3>
+            
+            <form id="registrationForm" class="space-y-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-bold mb-1">Full Name</label>
+                        <input type="text" id="fullname" placeholder="Enter your name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold mb-1">DLS Team Name</label>
+                        <input type="text" id="teamname" placeholder="As seen in game" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold mb-1">WhatsApp Number</label>
+                    <input type="tel" id="whatsapp" placeholder="+233555457509" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                </div>
+
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <p class="text-sm text-gray-600 italic">By clicking "Pay Now", you will be redirected to Paystack to complete your deposit of GH15 cedis.</p>
+                </div>
+
+                <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-black py-4 rounded-lg text-xl uppercase shadow-lg transition transform hover:scale-105">
+                    Pay Now & Join
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center border-t border-gray-800 text-gray-500 text-sm">
+        <p>&copy; 2026 Dream League Soccer Tournament Platform. Not affiliated with First Touch Games.</p>
+    </footer>
+
+    <script>
+        document.getElementById('registrationForm').onsubmit = function(e) {
+            e.preventDefault();
+            // Redirect to your Paystack Payment Page URL
+            // Replace 'https://paystack.com/pay/your-link' with your actual link
+            window.location.href = "https://paystack.com/pay/your-link"; 
+        };
+    </script>
+
+</body>
+</html>
+<table id="leaderboard">
+  <thead>
+    <tr>
+      <th>Rank</th>
+      <th>Player Name</th>
+      <th>Points</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>BLACK STAR</td>
+      <td>0</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>BARCELONA</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>REAL MADRID</td>
+        <td>0</td>
+    </tr>
+    </tbody>
+</table>
